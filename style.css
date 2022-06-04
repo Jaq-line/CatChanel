@@ -1,0 +1,110 @@
+ #style.css > :root
+    :root { 
+        --branco-principal: hsla(0, 29%, 95%, 0.881);
+        --cinza-segundario: #852a2a;
+        --botao-azul: #4171b9;
+        --cor-de-fundo: #5568a2;
+        --fonte-principal: 'Inter';
+        font-size:16px;
+        text-align: center;
+    }
+
+        body{
+
+            background-color: var(--cor-de-fundo);
+            align-items: center;
+            background-repeat: repeat;
+            background:hsla(0, 52%, 57%, 0.881);
+            background-image: url("img/background.jpg");
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            text-align: center;
+
+        }
+
+        .conteudo{
+
+            --branco-principal: hsla(0, 29%, 95%, 0.881);
+    float: none;
+    text-align: center;
+    border-radius: 5px;
+            padding: 1em;
+            color: var(--branco-principal);
+            display: block;
+            margin-bottom: 1em;
+            align-items: center;
+        }
+
+        .princial {
+
+            background-image: url("img/background.jpg");
+            align-items: center;
+            background-repeat: repeat;
+            background-size: contain;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            height: 20px;
+            text-align: center;
+            
+        }
+
+     
+        .container {
+
+            height: 100vh;
+            display: grid;
+
+            grid-template-columns: 33% 33% 33%; 
+            margin-bottom: 1em;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container__botao { background-color: var(--botao-azul); 
+            border-radius: 5px;
+            padding: 1em;
+            color: var(--branco-principal);
+            display: block;
+            margin-bottom: 1em;
+            align-items: center;
+            text-align: center;
+            
+        }
+
+        .container__aviso { font-size:12px;
+            display: block 
+            text-decoration: none;
+            margin-bottom: 1em;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container__imagem { margin: 1em 0 2em 0;  align-items: center; text-align: center;}
+
+.assin {
+    --botao-azul: #0a0c0f;
+
+    color: white;
+    text-align: center;
+
+}
+
+#img {
+
+    width: 50%;
+height: 400px;
+
+text-align: center;
+
+margin-right: center;
+display: block;
+margin: 0px auto;
+margin:auto;
+text-align: center;
+
+}

@@ -1,0 +1,52 @@
+Header: Em cima da página
+Aside: Na parte esquerda da página
+Main: Na parte direita da página
+Footer: Em baixo da página
+
+header header header": Aqui estamos dizendo que a primeira linha vai ser composta por um header.
+"aside main main": Aqui estamos dizendo que a segunda linha vai ser composta por um aside na esquerda e por um main na esquerda.
+"footer footer footer": Aqui estamos dizendo que a terceira e última linha vai ser composta por um footer.
+
+HTML
+
+<header class="o-header"></header>
+<aside class="o-aside"></aside>
+<main class="o-main"></main>
+<footer class="o-footer"></footer>
+
+CSS
+
+body {
+  display: grid;
+  font-family: Arial, sans-serif;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "header header header"
+    "aside main main"
+    "footer footer footer";
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto 100vh auto;
+}
+
+.o-header {
+  grid-area: header;
+  padding: 1.5rem;
+}
+
+.o-aside {
+  grid-area: aside;
+}
+
+.o-main {
+  grid-area: main;
+}
+
+.o-footer {
+  grid-area: footer;
+  padding: 1rem;
+}
+
+.o-header, .o-aside, .o-main, .o-footer {
+  background: #BC20E2;
+  color: #FDFDFD;
+}
